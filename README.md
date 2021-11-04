@@ -78,7 +78,16 @@ another useful tool:
 https://contrast-ratio.com/ 
 
  
-+ hover and focus effect to give feedback to the user
+
+hover and focus effect to give feedback to the user 
+hover is important when using the tab (keyboard access) so make sure to leave in the hover effect! or if the client ask to remove it remove it only for the mouse:
+ 
+```rd
+[data-whatintent='mouse'] *:focus {
+  outline: none;
+}
+ ```
+ 
 
 If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.
 
