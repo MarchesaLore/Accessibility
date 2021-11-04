@@ -8,13 +8,13 @@ There is also a strong business case for accessibility. Accessibility overlaps w
 
 The World Wide Web Consortium (W3C) is an international community where Member organizations and the public work together to develop Web standards. 
 
-Accessibility - W3C 
+https://www.w3.org/standards/webdesign/accessibility
 
  
 
 They have create a guideline: Web Content Accessibility Guidelines (WCAG) currently at version 2.2
 
-Web Content Accessibility Guidelines (WCAG) Overview 
+https://www.w3.org/WAI/standards-guidelines/wcag/
 
  
 
@@ -117,8 +117,11 @@ Content is readable and easy to understand
 Use simple language and avoid jargon hen possible
 
 abbreviations should be in tag <abbr> with title explaining the abbreviations
-
-<html lang=”en”> important to have the lang! so that screen readers will know the language used, when having text in other languages in the page then wrap it up in a span with tag lang 
+```rd
+<html lang="en"> 
+ ```
+ 
+ important to have the lang! so that screen readers will know the language used, when having text in other languages in the page then wrap it up in a span with tag lang 
 
 
 
@@ -182,11 +185,10 @@ If any interaction involves a timed response or session timeout, is this communi
 link to other tips on writing core for accessibility and source where I got the checklist:
 
 Teach Access Portal  
-
+https://teachaccess.github.io/tutorial/#/2
  
 
 RESOURCES
-Developer Resources | DeveloperResources-Accessibility  
 
 Mostly we use powermapper, siteimprove was with a client access not sure if we use it anymore with any site, but powermapper is pretty good, gives you all the issues devided by levels
 
@@ -222,14 +224,15 @@ always need to have it or find a way around, 3 solutions:
 2 style the element itself (focus element has different style than not focused element)
 3 remove outline for mouse user only 
 
-
+```rd
 [data-whatintent='mouse'] *:focus {
   outline: none;
 }
+ ```
 SEARCH input need a label
 encountered this before and just added a hidden label
 
-
+```rd
 <form role='search' action="/" method="get">
   <label for='header-search'>
     <span class='visually-hidden'>Search</span>
@@ -239,6 +242,7 @@ encountered this before and just added a hidden label
     <span class='visually-hidden'>Submit Search</span>
   </button>
 </form>
+ ````
 IFRAMES could be real pickles, always have the title
 
 SLIDER dots and arrows, usually just increase size & change colors
