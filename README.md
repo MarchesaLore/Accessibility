@@ -16,108 +16,70 @@ They have create a guideline: Web Content Accessibility Guidelines (WCAG) curren
 
 https://www.w3.org/WAI/standards-guidelines/wcag/
 
- 
+<h1>PRINCIPLES of ACCESSIBILITY:</h1>
+<h3 class="a1">PERCEIVABLE</h3>
+<a href="#1.1" class="a1">1.1 Text Alternatives</a><br/>
+<a href="#1.2" class="a1">1.2 Time-Based Media</a><br/>
+<a href="#1.3" class="a1">1.3 Adaptable</a><br/>
+<a href="#1.4" class="a1">1.4 Distinguishable</a><br/>
 
-#PRINCIPLES of ACCESSIBILITY:
+<h3 class="a2">OPERABLE</h3>
+<a href="#2.1" class="a2">2.1 Keyboard Accessible</a><br/>
+<a href="#2.2" class="a2">2.2 Enough Time</a><br/>
+<a href="#2.3" class="a2">2.3 Seizures and Physical Reactions</a><br/>
+<a href="#2.4" class="a2">2.4 Navigable</a><br/>
+<a href="#2.5" class="a2">2.5 Input Modalities</a><br/>
 
-#PERCEIVABLE
+<h3 class="a3">UNDERSTANDABLE</h3>
+<a href="#3.1" class="a3">3.1 Readable</a><br/>
+<a href="#3.2" class="a3">3.2 Predictable</a><br/>
+<a href="#3.3" class="a3">3.3 Input Assistance</a><br/>
 
-1.1 Text Alternatives
-
-1.2 Time-Based Media
-
-1.3 Adaptable
-
-1.4 Distinguishable
-
-
-
-#OPERABLE
-
-2.1 Keyboard Accessible
-
-2.2 Enough Time
-
-2.3 Seizures and Physical Reactions
-
-2.4 Navigable
-
-2.5 Input Modalities
+<h3 class="a4">ROBUST</h3>
+<a href="4.1" class="a4">4.1 Compatible</a><br/>
 
 
 
-#UNDERSTANDABLE
+<h1 id="PRINCIPLESex">PRINCIPLES EXPLAINED:</h1>
+<h3 id="1.1" class="a1">1.1 TEXT ALTERNATIVES</h3>
+<p>
+all non-text content has a text alternative, example on file: 11TextAlternatives.html
+    
+CAPTCHA<br/>
+google supports captcha with sound
+https://support.google.com/recaptcha/answer/6175971?hl=en
+</p>
 
-3.1 Readable
-
-3.2 Predictable
-
-3.3 Input Assistance
-
-
-
-#ROBUST
-
-4.1 Compatible
-
- 
-
-#PRINCIPLES EXPLAINED:
-
-
-#1.1 TEXT ALTERNATIVES
-
-all non-text content has a text alternative. ex:
-
-on images always have alt
-
-captcha image can’t have the alt but maybe add the audio option, so people with visual impediment can listen to it
-
-
-#1.2 TIME-BASED MEDIA
-
+<h3 id="1.2" class="a1">1.2 TIME-BASED MEDIA</h3>
+<p>
 To have alternative options for time based media, ex:
-
 Video with close captions that not only write the dialog but also describes the sound for context + audio description
 
+</p>
 
-#1.3 ADAPTABLE
-
-Content can be presented in different ways without losing context, ex:
-
+<h3 id="1.3" class="a1">1.3 ADAPTABLE</h3>
+<p>
+Content can be presented in different ways without losing context, ex:<br/>
 mobile, rotating device: different for different format
+    
+</p>
 
+<h3 id="1.4" class="a1">1.4 DISTINGUISHABLE</h3>
+<p>    
+    colors: 4.5 contrast most text, large text can have 3 https://webaim.org/resources/contrastchecker/
+    audio: background music should be 20 decibels quieter than speaking voice<br/>
+    
+    
+</p>
 
-#1.4 DISTINGUISHABLE
-
-content can be separated from background
-
-Contrast Ratio: Easily calculate color contrast ratios. Passing WCAG was never this easy! 
-
-colors: 4.5 contrast most text, large text can have 3
-audio: background music should be 20 decibels quieter than speaking voice
-
- 
-
-#2.1 KEYBOARD ACCESSIBLE
-
-All parts of a website can be accessible using a keyboard
-
-by default the button element is clickable and accordion works with only keyboard
-
-
-if we are using only div then we would still be able to click but it would not be keyboard accessible 
-
-
-to solve this and make the element equivalent to a button from an accessibility point of view, so that you can tab on it basically, you add role='button' and tabindex='0'
-
- 
-
-+ links: if you need to have a function/action need to use buttons and links only for links (from an accessibility point of view)
-
-
-
-#2.2 ENOUGH TIME
+<h3 id="2.1" class="a2">2.1 KEYBOARD ACCESSIBLE</h3>
+ <p>
+ All parts of a website can be accessible using a keyboard example on file 2.1KeyboardAcc.html
+    
+ </p>
+<h3 id="2.2" class="a2">2.2 ENOUGH TIME</h3>
+ <p>
+     
 
 People are given enough time to use the content on your website, ex:
 
@@ -125,15 +87,13 @@ video need to have controls (so user can pause and play the video at their time)
 
 pages that have sensitive information and have sessions that expire like banking or forms, need to give user a reasonable time, a warnings and chance to cancel the logout
 
-
-
-#2.3 SEIZURES AND PHYSICAL REACTIONS
-
-Animations and video should not flash more than 3 times per second
-
-
-
-#2.4 NAVIGABLE
+ </p>
+ <h3 id="2.3" class="a2">2.3 SEIZURES AND PHYSICAL REACTIONS</h3>
+<p>Animations and video should not flash more than 3 times per second</p>
+  <h3 id="2.4" class="a2">
+    2.4 NAVIGABLE</h3>
+   <p>
+       
 
 user can navigate + understand where they are
 
@@ -144,106 +104,84 @@ unique titles for each of their pages
 breadcrumb
 
 table of content
+   </p>
+   <h3 id="2.5" class="a2">2.5 INPUT MODALITIES</h3>
+<p>all parts of a website can be accessed using other input devices besides a keyboard
+</p>
 
 
-
-#2.5 INPUT MODALITIES
-
-all parts of a website can be accessed using other input devices besides a keyboard
-
- 
-
-#3.1 READABLE
-
+<h3 id="3.1" class="a3">3.1 READABLE</h3>
 Content is readable and easy to understand
-Use simple language and avoid jargon hen possible
-
-abbreviations should be in tag <abbr> with title explaining the abbreviations
+ Use simple language and avoid jargon hen possible
+ abbreviations should be in tag &lt;abbr&gt; with title explaining the abbreviations
 ```rd
-<html lang="en"> 
- ```
- 
- important to have the lang! so that screen readers will know the language used, when having text in other languages in the page then wrap it up in a span with tag lang 
-
-
-
-#3.2 PREDICTABLE
- 
+<html lang="en">
+```
+important to have the lang! so that screen readers will know the language used, when having text in other languages in the page then wrap it up in a span with tag lang 
+    
+<h3 id="3.2" class="a3">3.2 PREDICTABLE</h3>
 predictable in how they appear and operate, consistence between pages to avoid mistakes
 
- 
- 
-#3.3 INPUT ASSISTANCE 
+
+<h3 id="3.3" class="a3">3.3 INPUT ASSISTANCE</h3>
 
 help the user suggesting how to field the data with labels or placeholders
-
- 
-
-
 and colors and text to help individuate the error and correct it
 
- 
 
- 
-
-#4 ROBUST - COMPATIBLE
- 
+<h3 id="4.1" class="a4">4 ROBUST - COMPATIBLE</h3>
 work with different technologies:
 use valid HTML + ARIA to extend HTML
 
- 
- 
-#CHECKLIST
- 
-Developer checklist:
- 
-Do all images have meaningful alternative text?
 
-Is every focusable element operable using the keyboard alone?
-
-Is there a consistent visible focus indicator when navigating using the keyboard?
-
-Have all controls, frames, and page titles been labeled meaningfully and uniquely?
-
-If custom controls/components have been implemented, have these been tested to assure that assistive technology recognizes name, role, state, and value (where applicable)?
-
-Have custom controls/components been verified to work as expected using assistive technology, such as a screen reader?
-
-Are error messages interpretable by assistive technology?
-
-Do you have sufficient foreground and background color contrast?
-
-Have captions been included with any audio or audio/visual media?
 
  
- 
-Designer checklist:
- 
-Do I have sufficient contrast between text and my background?
 
-Do I have sufficient contrast between UI elements and my background?
 
-Are there any places where I’m color or other visual means alone to indicate something (ie, no text equivalent)?
 
-Is my written content simple and easy to understand?
 
-Are there any cases where the screen is flashing or flickering?
 
-Does every mouse interaction have a keyboard-only equivalent interaction?
+<h1>CHECKLIST</h1>
 
-Have captions been included with any audio or audio/visual presentation?
+<h4>Developer checklist:</h4>
 
-If any interaction involves a timed response or session timeout, is this communicated well?
+<ul>
+<li>Do all images have meaningful alternative text?
+</li>
+<li>Is every focusable element operable using the keyboard alone?
+</li>
+<li>Is there a consistent visible focus indicator when navigating using the keyboard?
+</li>
+<li>Have all controls, frames, and page titles been labeled meaningfully and uniquely?
+</li>
+<li>If custom controls/components have been implemented, have these been tested to assure that assistive technology recognizes name, role, state, and value (where applicable)?
+</li>
+<li>Have custom controls/components been verified to work as expected using assistive technology, such as a screen reader?</li>
+<li>Are error messages interpretable by assistive technology?</li>
+<li>Do you have sufficient foreground and background color contrast?</li>
+<li>Have captions been included with any audio or audio/visual media?</li>
+</ul>
 
-link to other tips on writing core for accessibility and source where I got the checklist:
 
- 
-Teach Access Portal   
+<h4>Designer checklist:</h4>
+
+<ul>
+    <li>Do I have sufficient contrast between text and my background?</li>
+ <li>Do I have sufficient contrast between UI elements and my background</li>
+ <li>Are there any places where I’m color or other visual means alone to indicate something (ie, no text equivalent)?
+    </li><li>Is my written content simple and easy to understand?
+    </li><li>Are there any cases where the screen is flashing or flickering?
+    </li><li>Does every mouse interaction have a keyboard-only equivalent interaction?
+    </li><li>Have captions been included with any audio or audio/visual presentation?    
+    </li><li>If any interaction involves a timed response or session timeout, is this communicated well?
+    </li>
+</ul>
+
+link to other tips on writing core for accessibility and source where I got the checklist: 
 https://teachaccess.github.io/tutorial/#/2
- 
- 
 
-#RESOURCES
+
+<h1>RESOURCES</h1>
 
 Powermapper (SortSite)
 
