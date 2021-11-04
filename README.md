@@ -66,9 +66,23 @@ mobile, rotating device: different for different format
 
 <h3 id="1.4" class="a1">1.4 DISTINGUISHABLE</h3>
 <p>    
-    colors: 4.5 contrast most text, large text can have 3 https://webaim.org/resources/contrastchecker/
-    audio: background music should be 20 decibels quieter than speaking voice<br/>
-    
+    COLOR + RESIZE TEXT
+content can be separated from background, different type of text (headers, content) or buttons have different requirements, generically a 4.5 works for reaching a Level A with buttons/anchors: headers, navigation, controls, content.. some large text 3 can work.
+
+here is a tool I used before:
+https://webaim.org/resources/contrastchecker/ 
+just need to set the background color and text color:
+ ![image](https://user-images.githubusercontent.com/22336407/140417205-c352cf08-d11e-4ca1-a0e3-92545874c642.png)
+
+another useful tool:
+https://contrast-ratio.com/ 
+
+ 
++ hover and focus effect to give feedback to the user
+
+If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.
+
+Also less used from us but to keep in mind, same role works with audio: background music should be 20 decibels quieter than speaking voice.
     
 </p>
 
