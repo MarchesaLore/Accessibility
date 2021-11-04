@@ -1,0 +1,105 @@
+.content{
+    max-width: 900px;
+    margin:auto;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background: #eee;
+}
+.menu a{ 
+  background: #eee;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  .dropdown-content a{
+  justify-content: left;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+  .a1{
+      color: #5B8E7D;
+  }
+  .a2{
+      color: #F4A259;
+  }
+  .a3{
+      color: #BC4B51;
+  }
+  .a4{
+      color: #33032F;
+  }
+
+
+
+
+/*accordion style for page 2.1 */
+.accordion, .accordion1{
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover, .accordion1:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  ._button{
+      padding:10px;
+      background-color: #333;
+      color:#fff;
+      text-decoration: none;
+    border-radius: 5px;
+  }
+  ._button:hover{
+      background-color: #000;
+  }
