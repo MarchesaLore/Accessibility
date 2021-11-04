@@ -21,47 +21,75 @@ https://www.w3.org/WAI/standards-guidelines/wcag/
 #PRINCIPLES of ACCESSIBILITY:
 
 #PERCEIVABLE
+
 1.1 Text Alternatives
+
 1.2 Time-Based Media
+
 1.3 Adaptable
+
 1.4 Distinguishable
 
+
+
 #OPERABLE
+
 2.1 Keyboard Accessible
+
 2.2 Enough Time
+
 2.3 Seizures and Physical Reactions
+
 2.4 Navigable
+
 2.5 Input Modalities
 
+
+
 #UNDERSTANDABLE
+
 3.1 Readable
+
 3.2 Predictable
+
 3.3 Input Assistance
 
+
+
 #ROBUST
+
 4.1 Compatible
 
  
 
 #PRINCIPLES EXPLAINED:
+
+
 #1.1 TEXT ALTERNATIVES
+
 all non-text content has a text alternative. ex:
 
 on images always have alt
 
 captcha image can’t have the alt but maybe add the audio option, so people with visual impediment can listen to it
 
+
 #1.2 TIME-BASED MEDIA
+
 To have alternative options for time based media, ex:
 
 Video with close captions that not only write the dialog but also describes the sound for context + audio description
 
+
 #1.3 ADAPTABLE
+
 Content can be presented in different ways without losing context, ex:
 
 mobile, rotating device: different for different format
 
+
 #1.4 DISTINGUISHABLE
+
 content can be separated from background
 
 Contrast Ratio: Easily calculate color contrast ratios. Passing WCAG was never this easy! 
@@ -72,6 +100,7 @@ audio: background music should be 20 decibels quieter than speaking voice
  
 
 #2.1 KEYBOARD ACCESSIBLE
+
 All parts of a website can be accessible using a keyboard
 
 by default the button element is clickable and accordion works with only keyboard
@@ -87,17 +116,25 @@ to solve this and make the element equivalent to a button from an accessibility 
 + links: if you need to have a function/action need to use buttons and links only for links (from an accessibility point of view)
 
 
+
 #2.2 ENOUGH TIME
+
 People are given enough time to use the content on your website, ex:
 
 video need to have controls (so user can pause and play the video at their time) + animations that last more than 5s (they can be distracting)
 
 pages that have sensitive information and have sessions that expire like banking or forms, need to give user a reasonable time, a warnings and chance to cancel the logout
 
+
+
 #2.3 SEIZURES AND PHYSICAL REACTIONS
+
 Animations and video should not flash more than 3 times per second
 
+
+
 #2.4 NAVIGABLE
+
 user can navigate + understand where they are
 
 focus and outline css
@@ -108,12 +145,16 @@ breadcrumb
 
 table of content
 
+
+
 #2.5 INPUT MODALITIES
+
 all parts of a website can be accessed using other input devices besides a keyboard
 
  
 
 #3.1 READABLE
+
 Content is readable and easy to understand
 Use simple language and avoid jargon hen possible
 
@@ -127,9 +168,12 @@ abbreviations should be in tag <abbr> with title explaining the abbreviations
 
 
 #3.2 PREDICTABLE
+ 
 predictable in how they appear and operate, consistence between pages to avoid mistakes
 
-#3.3 INPUT ASSISTANCE
+ 
+ 
+#3.3 INPUT ASSISTANCE 
 
 help the user suggesting how to field the data with labels or placeholders
 
@@ -143,13 +187,16 @@ and colors and text to help individuate the error and correct it
  
 
 #4 ROBUST - COMPATIBLE
+ 
 work with different technologies:
 use valid HTML + ARIA to extend HTML
 
  
+ 
 #CHECKLIST
  
 Developer checklist:
+ 
 Do all images have meaningful alternative text?
 
 Is every focusable element operable using the keyboard alone?
@@ -168,7 +215,10 @@ Do you have sufficient foreground and background color contrast?
 
 Have captions been included with any audio or audio/visual media?
 
+ 
+ 
 Designer checklist:
+ 
 Do I have sufficient contrast between text and my background?
 
 Do I have sufficient contrast between UI elements and my background?
@@ -187,8 +237,10 @@ If any interaction involves a timed response or session timeout, is this communi
 
 link to other tips on writing core for accessibility and source where I got the checklist:
 
-Teach Access Portal  
+ 
+Teach Access Portal   
 https://teachaccess.github.io/tutorial/#/2
+ 
  
 
 #RESOURCES
@@ -198,6 +250,7 @@ Powermapper (SortSite)
 SortSite checks any website for broken links, spelling errors, browser compatibility, accessibility, web standards validation and search engine issues.
 
 
+ 
 LIGHTHOUSE (on chrome)
 
 Open-source automated tool for improving the quality of the web pages.
@@ -216,11 +269,14 @@ Color contrast check: https://contrast-ratio.com/
  
 
 #FINAL THOUGHTS
+ 
 challenges? most seen scenes when working with accessibility?
 
+ 
 what I have seen:
 
 OUTLINE removed from css
+ 
 always need to have it or find a way around, 3 solutions:
 1 style the outline, instead of using the default, but still need to be within limits, ex contrast
 2 style the element itself (focus element has different style than not focused element)
@@ -231,9 +287,11 @@ always need to have it or find a way around, 3 solutions:
   outline: none;
 }
  ```
+ 
 SEARCH input need a label
 encountered this before and just added a hidden label
 
+ 
 ```rd
 <form role='search' action="/" method="get">
   <label for='header-search'>
@@ -245,6 +303,7 @@ encountered this before and just added a hidden label
   </button>
 </form>
  ````
+ 
 IFRAMES could be real pickles, always have the title
 
 SLIDER dots and arrows, usually just increase size & change colors
