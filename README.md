@@ -93,14 +93,15 @@ Also less used from us but to keep in mind, same role works with audio: backgrou
  </p>
 <h3 id="2.2" class="a2">2.2 ENOUGH TIME</h3>
  <p>
-     
-
 People are given enough time to use the content on your website, ex:
 
 video need to have controls (so user can pause and play the video at their time) + animations that last more than 5s (they can be distracting)
 
 pages that have sensitive information and have sessions that expire like banking or forms, need to give user a reasonable time, a warnings and chance to cancel the logout
 
+ but also see this example for the slider with pause and play buttons
+ https://github.com/MarchesaLore/SlickSliderPausePlay
+ 
  </p>
  <h3 id="2.3" class="a2">2.3 SEIZURES AND PHYSICAL REACTIONS</h3>
 <p>Animations and video should not flash more than 3 times per second</p>
